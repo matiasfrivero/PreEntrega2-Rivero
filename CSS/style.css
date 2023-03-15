@@ -1,0 +1,153 @@
+/* estilos generales */
+*{
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* las cajas se adaptan a los bordes */
+    list-style: none;  /* saca estilo a las listas */
+}
+a{
+    text-decoration: none;  /* saca subrayado, tachado */
+    color: black;
+}
+
+/* estilos de inicio */
+/* los display flex se aplican a los elementos padre, no a los hijos a menos que quiera individualizar su estilo */
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+}
+.insta a:hover{
+    color: rgb(165, 42, 93);
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+}
+.navegador a{
+    border-right: 2px solid rgb(216, 216, 216);
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style: none outside none;
+}
+.navegador a:last-child{
+    border-right: none;
+}
+.navegador a:hover{
+    text-decoration: none;
+    color: rgb(44, 168, 177);
+}
+.redes{
+    display: flex;
+    gap: 40px;
+}
+.banner{
+    background-image: url(../Media/afa1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 170px;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    text-shadow: 3px 3px 2px black;
+}
+.infobanner{
+    border: 2px solid;
+    background-color: white;
+    border-color: rgb(194, 194, 194);
+    border-radius: 6mm;
+    padding: 10px;
+    color: black;
+    text-shadow: none;
+}
+.infobanner:hover{
+    background-color: rgb(210, 234, 255);
+}
+.estrellas{
+    background-color: rgb(224, 246, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.estrellas a:hover{
+    color: goldenrod;
+}
+.estrellas strong{
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    color: rgba(128, 128, 128, 0.712);
+    opacity: 80%;
+}
+footer a:hover{
+    color: rgb(57, 106, 129);
+}
+
+/* estilos de plantel */
+.imgfondo{
+    background-image: url(../Media/afaformacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main.pdefecto{
+    width: 100%;
+    height: 550px;
+}
+.introd{
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.781);
+    text-align: center;
+    padding: 20px;
+}
+.introd p{
+    font-size: 20px;
+}
+.fullteam{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.personas{
+    padding: 10px;
+    border-radius: 4mm;
+    background-color: rgba(236, 236, 236, 0.795);
+}
+.personas li{
+    text-align: left;
+}
+
+/* estilos de partidos */
+.fondo{
+    background-color: rgb(255, 253, 218);
+}
+.map{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+.games{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4mm;
+}
+/* estilos de final */
+
+/* estilos de contacto */
+
+/* media queries para moviles */
