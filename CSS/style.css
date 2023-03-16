@@ -19,6 +19,7 @@ a{
     text-align: center;
     padding: 25px;
     background-color: white;
+    margin-top: 2vh;
 }
 .insta a:hover{
     color: rgb(165, 42, 93);
@@ -45,27 +46,15 @@ a{
     gap: 40px;
 }
 .banner{
-    background-image: url(../Media/afa1.jpg);
+    background-image: url(../Media/afarecortada.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
     text-align: center;
-    font-family: sans-serif;
-    padding: 170px;
+    padding: 190px;
     opacity: 0.9;
-    width: 100%;
-    height: 100%;
     text-shadow: 3px 3px 2px black;
-}
-.infobanner{
-    border: 2px solid;
-    background-color: white;
-    border-color: rgb(194, 194, 194);
-    border-radius: 6mm;
-    padding: 10px;
-    color: black;
-    text-shadow: none;
 }
 .infobanner:hover{
     background-color: rgb(210, 234, 255);
@@ -132,22 +121,118 @@ main.pdefecto{
 
 /* estilos de partidos */
 .fondo{
-    background-color: rgb(255, 253, 218);
+    background-image: url(../Media/lusailtransparency.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 165vh;
 }
-.map{
-    display: flex;
-    justify-content: space-around;
+.gridpartidos{
+    display: grid;
     align-items: center;
-    padding: 50px;
     text-align: center;
+    padding: 50px;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(3 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "map fechas fechas"
+    "map resultados resultados"
+    "map none none";        
 }
 .games{
     background-color: white;
     padding: 20px;
     border-radius: 4mm;
 }
+.map{
+    grid-area: map;
+}
+.resultados{
+    grid-area: resultados;    
+}
+.fechas{
+    grid-area: fechas;
+}
+.fdegrupos{
+    color: green;
+    -webkit-text-stroke: 0.5px black;
+}
+.octavos{
+    color: lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+.cuartos{
+    color: orange;
+    -webkit-text-stroke: 0.5px black;
+}
+.semifinal{
+    color: red;
+    -webkit-text-stroke: 0.5px black;
+}
+.final{
+    color: gold;
+    -webkit-text-stroke: 0.5px black;
+}
+
 /* estilos de final */
+.cuerpofinal{
+    text-align: center;
+    padding: 25px;
+    background-color: azure;
+    background-image: url(../Media/bandera-transparencia.png);
+    background-position: center;
+}
 
 /* estilos de contacto */
+.col{
+    gap: 10px;
+    padding: 10px;
+    margin: 0px 20px;
+}
+.row{
+    margin: 0px 20px;
+    padding-top: 10px;
+}
+.contactform{
+    text-align: center;
+}
+.finaltext{
+    text-align: center;
+    padding: 20px;
+    margin-top: 35vh;
+}
+.estrellasfinal{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.copadelmundo{
+    background-image: url(../Media/copadelmundo.png);
+    background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
+}
 
 /* media queries para moviles */
+@media (min-width: 360px) and (max-width: 780px){
+    .encabezado{
+        display: none;
+    }
+    .infobanner{
+        display: none;
+    }
+}
+
+@media (min-width: 781px){
+    .navbar{
+        display: none;
+    }
+}
+
+/* @media (max-width: 360px){
+    .banner{
+        background-position: -1380px;
+    }
+} */

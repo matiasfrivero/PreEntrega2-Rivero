@@ -12,17 +12,46 @@
     <link rel="stylesheet" href="../CSS/style.css"> <!-- no olvidar linkear todas las paginas del sitio web -->
 </head>
 <body>
-    <header class="">
+    <header>
+        <!-- navbar hamburguesa media querie de bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menú</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./plantel.html">Plantel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./partidos.html">Partidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./final.html">Final</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- navbar para modo desktop -->
             <div class="encabezado">
                 <p class="insta">
                     <strong><a href="https://www.instagram.com/afaseleccion/?hl=es">@afaseleccion</a></strong>
                 </p>             
                 <ul class="navegador"> <!-- revisar cada pagina -->
                     <a href="./index.html"><li>Inicio</li></a>
-                    <a href="./Web/plantel.html"><li>Plantel</li></a>
-                    <a href="./Web/partidos.html"><li>Partidos</li></a>
-                    <a href="./Web/final.html"><li>Final</li></a>
-                    <a href="./Web/contacto.html"><li>Contacto</li></a>
+                    <a href="./plantel.html"><li>Plantel</li></a>
+                    <a href="./partidos.html"><li>Partidos</li></a>
+                    <a href="./final.html"><li>Final</li></a>
+                    <a href="./contacto.html"><li>Contacto</li></a>
                 </ul>                    
                 <ul class="redes">
                     <a href="https://twitter.com/afa"><img src="../Media/twitter-png.png" alt="Twitter" width="19px" height="16px"></a>
@@ -39,29 +68,25 @@
         <p class="parrafobanner">
             Reviví momentos historicos, observa datos sobre el equipo campeón, y disfrutá del camino que recorrio la Selección Argentina de Fútbol para consagrarse Campeón de la Copa Mundial Qatar 2022.
         </p>
-        <br>
-        <p class="infobanner">
-           <a href="./Web/contacto.html">MAS INFO</a>
-        </p>
     </section>
 
     <section class="estrellas">
     <p>
-        <img src="../Media/estrella-detallada.png" alt="star1" width="60px">
+        <img src="../Media/estrella-detallada.png" alt="star1" width="60vw">
         <br>
         <strong>Argentina 1978</strong>
         <br>
         <em><a href="https://es.wikipedia.org/wiki/Argentina_en_la_Copa_Mundial_de_F%C3%BAtbol_de_1978">Historia de nuestra primer estrella...</a></em>
     </p>
     <p>
-        <img src="../Media/estrella-detallada.png" alt="star2" width="60px">
+        <img src="../Media/estrella-detallada.png" alt="star2" width="60vw">
         <br>
         <strong>Mexico 1986</strong>
         <br>
         <em><a href="https://es.wikipedia.org/wiki/Argentina_en_la_Copa_Mundial_de_F%C3%BAtbol_de_1986">Historia de nuestra segunda estrella...</a></em>
     </p>
     <p>
-        <img src="../Media/estrella-detallada.png" alt="star3" width="60px">
+        <img src="../Media/estrella-detallada.png" alt="star3" width="60vw">
         <br>
         <strong>Qatar 2022</strong>
         <br>
@@ -74,5 +99,6 @@
             <a href="https://www.afa.com.ar/es/">Sitio Web Oficial de la Asosiación del Fútbol Argentino</a>
         </em>
     </footer>
+    <script src="./JS/js/bootstrap.bundle.js"></script>
 </body>
 </html>

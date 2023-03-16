@@ -8,20 +8,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <header>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menú</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./plantel.html">Plantel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./partidos.html">Partidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./final.html">Final</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
         <div class="encabezado">
             <p class="insta">
                 <strong><a href="https://www.instagram.com/afaseleccion/?hl=es">@afaseleccion</a></strong>
             </p>             
             <ul class="navegador">
                 <a href="./index.html"><li>Inicio</li></a>
-                <a href="./Web/plantel.html"><li>Plantel</li></a>
-                <a href="./Web/partidos.html"><li>Partidos</li></a>
-                <a href="./Web/final.html"><li>Final</li></a>
-                <a href="./Web/contacto.html"><li>Contacto</li></a>
+                <a href="./plantel.html"><li>Plantel</li></a>
+                <a href="./partidos.html"><li>Partidos</li></a>
+                <a href="./final.html"><li>Final</li></a>
+                <a href="./contacto.html"><li>Contacto</li></a>
             </ul>                    
             <ul class="redes">
                 <a href="https://twitter.com/afa"><img src="../Media/twitter-png.png" alt="Twitter" width="19px" height="16px"></a>
@@ -30,13 +60,39 @@
         </div>
     </header>
 
-    <main class="pdefecto">
-        <h1>
-            ¡Contactate con Nosotros!
-        </h1>
-        <form action=""></form>
-
-
+    <main class="pdefecto copadelmundo">
+        <div class="contactform">
+            <h1>
+                ¡Comunicate con Nosotros!
+            </h1>
+            <p>
+                Si necesitas más información, datos sobre la Selección Argentina de Fútbol, o simplemente dejarnos una reseña, no dudes en rellenar el formulario a continuación.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+        </div>
+        <div class="row mensajelargo">
+            <input type="text" class="form-control" placeholder="Dejanos acá tu mensaje..." aria-label="Dejanos acá tu mensaje...">
+        </div>
+        <div class="finaltext introd">
+            <p>
+                ¡Gracias por ayudarnos a mejorar!
+            </p>
+            <div class="estrellasfinal">
+                <img src="./Media/estrella-detallada.png" width="45vw" alt="estrella">
+                <img src="./Media/estrella-detallada.png" width="45vw" alt="estrella">
+                <img src="./Media/estrella-detallada.png" width="45vw" alt="estrella">
+            </div>
+        </div>
     </main>
 
     <footer class="piedepagina">
@@ -44,5 +100,7 @@
             <a href="https://www.afa.com.ar/es/">Sitio Web Oficial de la Asosiación del Fútbol Argentino</a>
         </em>
     </footer>
+
+    <script src="./JS/js/bootstrap.bundle.js"></script>
 </body>
 </html>
