@@ -45,7 +45,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-*Media
 *bootstrap-5.2.3-dist
 *JS
 
