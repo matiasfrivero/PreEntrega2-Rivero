@@ -1,1 +1,297 @@
-/* las media queries hay que vincularla */
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;700&display=swap');
+
+/* variables */
+$HoverColor: rgb(44, 168, 177);
+
+/* estilos generales */
+* {
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* estilos inicio */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 25px;
+  background-color: white;
+  margin-top: 2vh;
+}
+
+.insta a:hover {
+  color: rgb(165, 42, 93);
+}
+
+.navegador {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    border-right: 2px solid rgb(216, 216, 216);
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style: none outside none;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $HoverColor;
+        display: inline-block;
+        animation: pulse;
+        animation-duration: 1.5s;
+    }
+  }
+}
+
+.redes {
+  display: flex;
+  gap: 40px;
+}
+
+.banner {
+  background-image: url(../Media/afarecortada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 190px;
+  text-shadow: 3px 3px 2px black;
+  width: 100%;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.infobanner:hover {
+  background-color: rgb(210, 234, 255);
+}
+
+.estrellas {
+  background-color: rgb(224, 246, 255);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  a:hover {
+    color: goldenrod;
+  }
+
+  strong {
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+  }
+}
+
+.star {
+  width: 75px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: rgba(128, 128, 128, 0.712);
+  opacity: 80%;
+
+  a:hover {
+    color: $HoverColor;
+  }
+}
+
+/* estilos plantel */
+.imgfondo {
+  background-image: url(../Media/afaformacion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introd {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.781);
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn;
+  animation-duration: 1s;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.fullteam {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+.personas {
+  padding: 10px;
+  border-radius: 4mm;
+  background-color: rgba(236, 236, 236, 0.795);
+
+  li {
+    text-align: left;
+  }
+}
+
+/* estilos partidos */
+.fondo {
+  background-image: url(../Media/lusailtransparency.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(221, 212, 212);
+  height: 850px;
+}
+
+.gridpartidos {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+  grid-template-rows: repeat(2 200px);
+  grid-template-columns: repeat(2 200px);
+  gap: 20px;
+  grid-template-areas: "map fechas fechas" "map resultados resultados";
+  animation: fadeIn;
+  animation-duration: 2.5s;
+}
+
+.games {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4mm;
+}
+
+.map {
+  grid-area: map;
+  height: 400px;
+  width: 450px;
+}
+
+.resultados {
+  grid-area: resultados;
+}
+
+.fechas {
+  grid-area: fechas;
+}
+
+.fdegrupos {
+  color: green;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.octavos {
+  color: lightblue;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.cuartos {
+  color: orange;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.semifinal {
+  color: red;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.final {
+  color: gold;
+  -webkit-text-stroke: 0.5px black;
+}
+
+/* estilos final */
+.cuerpofinal {
+  text-align: center;
+  padding: 25px;
+  background-color: azure;
+  background-image: url(../Media/bandera-transparencia.png);
+  background-position: center;
+  animation: fadeIn;
+  animation-duration: 2s;
+
+  div iframe {
+    width: 90%;
+    height: 600px;
+  }
+}
+
+/* estilos contacto */
+.col {
+  gap: 10px;
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.row {
+  margin: 0px 20px;
+  padding-top: 10px;
+}
+
+.contactform {
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario1 div input {
+  text-align: center;
+  opacity: 0.9;
+}
+
+.mensajelargo {
+  display: flex;
+  justify-content: center;
+
+  input {
+    height: 100px;
+    text-align: center;
+    opacity: 0.9;
+    width: 800px;
+  }
+}
+
+.finaltext {
+  text-align: center;
+  padding: 20px;
+  margin-top: 220px;
+}
+
+.estrellasfinal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copadelmundo {
+  background-image: url(../Media/copadelmundo.png);
+  background-position: center;
+  background-size: 70vh;
+  background-repeat: no-repeat;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+/* partials */
+@import "./Partials/queries"
+

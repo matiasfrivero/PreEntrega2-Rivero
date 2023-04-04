@@ -1,0 +1,118 @@
+/* media queries para moviles */
+@media (min-width: 360px) and (max-width: 780px){
+    /* inicio */
+    .encabezado{
+        display: none;
+    }
+    .infobanner{
+        display: none;
+    }
+    .banner{
+        position: relative;
+    }
+    .titulobanner{
+        font-size: x-large;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        right: 5%;
+    }
+    .parrafobanner{
+        font-size: small;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+    }
+    .estrellas{
+        padding: 10px;
+        gap: 9px;
+        font-size: smaller;
+    }
+    .estrellas p strong{
+        font-size: 15px;
+    }
+    .estrellas p em a{
+        font-size: small;
+        color: rgb(113, 113, 255);
+    }
+    .piedepagina em a{
+        font-size: smaller;
+    }
+    .star{
+        width: 50px;
+    }
+
+    /* plantel */
+    .introd h1 strong{
+        font-size: 20px;
+    }
+    .introd p{
+        font-size: 13px;
+    }
+    .fullteam{
+        font-size: 15px;
+        display: block;
+    }
+    .imgfondo{
+        background-position: center;
+    }
+    .personas li{
+        text-align: center;
+    }
+
+    /* partidos */
+    .introd h2{
+        font-size: 15px;
+    }
+    .introd p em{
+        font-weight: bold;
+    }
+    .fondo{
+        height: auto;
+        background-size: cover;
+    }
+    .gridpartidos iframe{
+        width: 120px;
+        height: 300px;
+    }
+    .games{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    /* final */
+    .cuerpofinal h1 strong{
+        font-size: large;
+    }
+    .cuerpofinal div iframe{
+        height: auto;
+    }
+
+    /* contacto */
+    .contactform h1{
+        font-weight: bold;
+        font-size: x-large;
+    }
+    .contactform p{
+        font-size: small;
+    }
+    .nombreyap{
+        display: flex;
+        justify-content: center;
+    }
+    .formulario1 div input{
+        width: 200px;
+        text-align: center;
+    }
+    .finaltext{
+        margin-top: 10px;
+    }
+}
+
+/* fijarse que ningun archivo de media imagen o video tenga ancho y alto desde html */
+@media (min-width: 781px){
+    .navbar{
+        display: none;
+    }
+}
