@@ -231,6 +231,11 @@ footer {
   animation: fadeIn;
   animation-duration: 2s;
 
+  h1 {
+    animation: fadeInUp;
+    animation-duration: 3.5s;
+  }
+
   div iframe {
     width: 90%;
     height: 600px;
@@ -252,6 +257,7 @@ footer {
 .contactform {
   text-align: center;
   padding: 20px;
+  background-color: rgb(255, 255, 255, 0.6);
 }
 
 .formulario1 div input {
